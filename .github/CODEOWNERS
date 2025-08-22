@@ -1,0 +1,34 @@
+# CODEOWNERS file for job-api-16
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-frontend @Armor-test/team-core @Armor-test/team-product
+
+# Directory ownership
+/test/ @Armor-test/team-core @Armor-test/grp-reliability
+/hooks/ @Armor-test/grp-release @Armor-test/dept-messaging @Armor-test/team-metrics
+/assets/ @Armor-test/team-ux @Armor-test/grp-payments
+/controllers/ @Armor-test/squad-search @Armor-test/squad-reporting
+/static/ @Armor-test/squad-notifications @Armor-test/dept-qa
+/core/ @Armor-test/unit-search @Armor-test/dept-qa
+/helpers/ @Armor-test/team-research @Armor-test/squad-search @Armor-test/team-auth
+/public/ @Armor-test/team-product @Armor-test/dept-database
+/plugins/ @Armor-test/team-architecture @Armor-test/team-research
+/docs/ @Armor-test/team-logging @Armor-test/dept-messaging @Armor-test/dept-network
+/security/ @Armor-test/dept-billing @Armor-test/squad-reporting
+/third_party/ @Armor-test/team-core @Armor-test/dept-frontend
+
+# File type ownership
+*.java @Armor-test/team-architecture @Armor-test/dept-database @Armor-test/dept-frontend
+*.gradle @Armor-test/dept-ui @Armor-test/dept-payments @Armor-test/squad-automation
+*.rs @Armor-test/dept-search @Armor-test/dept-frontend @Armor-test/dept-network
+*.c @Armor-test/dept-search @Armor-test/dept-qa
+*.scala @Armor-test/grp-apps @Armor-test/grp-ui
+*.lock @Armor-test/unit-logging @Armor-test/team-content
+*.yml @Armor-test/dept-qa @Armor-test/grp-reliability @Armor-test/grp-notifications
+*.ts @Armor-test/unit-mobile @Armor-test/dept-network @Armor-test/squad-search
+*.cs @Armor-test/grp-reporting @Armor-test/team-auth
+*.sql @Armor-test/grp-product @Armor-test/grp-ui @Armor-test/dept-frontend
+
+# Security and special files
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+Dockerfile @Armor-test/devops @Armor-test/infra
